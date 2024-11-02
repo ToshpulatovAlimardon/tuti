@@ -33,7 +33,7 @@ body {
   animation-delay: 5s;
   z-index: 0;
   box-shadow: 0 0 20px red;
-  background-image: url("red.jpg");
+  background-image: url("images/red.jpg");
   background-size: cover;
   background-position: right;
 }
@@ -60,7 +60,7 @@ body {
   animation-delay: 3s;
   z-index: 7;
   box-shadow: 0 0 20px orange;
-  background-image: url("orange.jpg");
+  background-image: url("images/orange.jpg");
   background-size: cover;
 }
 @keyframes orange {
@@ -86,7 +86,7 @@ body {
   animation-delay: 4s;
   z-index: 2;
   box-shadow: 0 0 20px white;
-  background-image: url("white.jpg");
+  background-image: url("images/white.jpg");
   background-size: 200% 100%;
   background-position: right;
 }
@@ -114,7 +114,7 @@ body {
   animation-delay: 2s;
   z-index: 1;
   box-shadow: 0 0 20px yellow;
-  background-image: url("yellow.jpg");
+  background-image: url("images/yellow.jpg");
   background-size: cover;
 }
 @keyframes yellow {
@@ -138,7 +138,7 @@ body {
   animation-delay: 1s;
   z-index: 6;
   box-shadow: 0 0 20px black;
-  background-image: url("black.png");
+  background-image: url("images/black.png");
   background-size: cover;
 }
 @keyframes eye {
