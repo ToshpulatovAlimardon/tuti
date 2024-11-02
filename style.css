@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+.bird {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+.red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 250px;
+  border-radius: 500px 500px 0 0;
+  background-color: red;
+  transform: rotate(90deg);
+  transform-origin: bottom;
+  animation: red 1.5s linear infinite;
+  animation-direction: alternate;
+  animation-delay: 5s;
+  z-index: 0;
+  box-shadow: 0 0 20px red;
+  background-image: url("red.jpg");
+  background-size: cover;
+  background-position: right;
+}
+@keyframes red {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(625deg);
+  }
+}
+.orange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 100%;
+  background-color: orange;
+  transform: translate(50px, 50px) rotate(0deg);
+  transform-origin: bottom right;
+  animation: orange 0.8s linear infinite;
+  animation-direction: alternate;
+  animation-delay: 3s;
+  z-index: 7;
+  box-shadow: 0 0 20px orange;
+  background-image: url("orange.jpg");
+  background-size: cover;
+}
+@keyframes orange {
+  0% {
+    transform: translate(50px, 50px) rotate(0deg);
+  }
+  100% {
+    transform: translate(50px, 50px) rotate(90deg);
+  }
+}
+.white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  border-radius: 400px 400px 0 0;
+  background-color: white;
+  transform-origin: bottom;
+  transform: translate(50px, 50px) rotate(90deg);
+  animation: white 1.6s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 4s;
+  z-index: 2;
+  box-shadow: 0 0 20px white;
+  background-image: url("white.jpg");
+  background-size: 200% 100%;
+  background-position: right;
+}
+@keyframes white {
+  0% {
+    transform: translate(50px, 50px) rotate(90deg);
+  }
+  100% {
+    transform:  translate(50px, 50px) rotate(555deg);
+  }
+}
+
+.yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 125px;
+  border-top-left-radius: 100%;
+  background-color: yellow;
+  transform-origin: bottom right;
+  transform: translate(125px, 125px) rotate(270deg);
+  animation: yellow 0.8s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 2s;
+  z-index: 1;
+  box-shadow: 0 0 20px yellow;
+  background-image: url("yellow.jpg");
+  background-size: cover;
+}
+@keyframes yellow {
+  0% {
+    transform: translate(125px, 125px) rotate(180deg);
+  }
+  100% {
+    transform: translate(125px, 125px) rotate(270deg);
+  }
+}
+.eye {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(280px, 130px);
+  animation: eye 2s linear infinite;
+  animation-delay: 1s;
+  z-index: 6;
+  box-shadow: 0 0 20px black;
+  background-image: url("black.png");
+  background-size: cover;
+}
+@keyframes eye {
+  0% {
+    transform: translate(280px, 130px);
+  }
+  25% {
+    transform: translate(130px, 130px);
+  }
+  50% {
+    transform: translate(130px, 270px);
+  }
+  75% {
+    transform: translate(280px, 270px);
+  }
+  100% {
+    transform: translate(280px, 130px);
+  }
+}
